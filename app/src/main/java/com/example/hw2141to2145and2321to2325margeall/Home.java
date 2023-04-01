@@ -15,6 +15,7 @@ import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -32,6 +33,7 @@ public class Home extends AppCompatActivity {
         setContentView(R.layout.activity_home);
         gridView = findViewById(R.id.gridView);
 
+        welcome();
 
         createTable();
 
@@ -247,6 +249,11 @@ public class Home extends AppCompatActivity {
     }
 
     //=============Custom method end=============
+
+
+    public void welcome(){
+        Toast.makeText(Home.this, "Welcome Sir/Madam", Toast.LENGTH_SHORT).show();
+    }
 
 
 }
