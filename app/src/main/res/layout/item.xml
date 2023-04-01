@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/lly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+
+    <soup.neumorphism.NeumorphCardView
+        android:layout_width="180dp"
+        android:layout_height="150dp"
+        app:neumorph_shapeType="basin"
+       >
+
+        <LinearLayout
+            android:id="@+id/itemlly"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            >
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:maxLines="3"
+                android:ellipsize="end"
+                android:textColor="@color/white"
+                android:text="Whether a number is divisible by 5 and 11 or not."
+                />
+        </LinearLayout>
+
+
+
+
+    </soup.neumorphism.NeumorphCardView>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

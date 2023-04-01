@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SubjectsGrade">
+
+
+    <soup.neumorphism.NeumorphCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <TextView
+                android:id="@+id/tvHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:text="Divisible number"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </soup.neumorphism.NeumorphCardView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#1B000000"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Marks to percentage and grade"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+        <soup.neumorphism.NeumorphCardView
+            style="@style/Widget.Neumorph.CardView"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            app:neumorph_shapeType="basin"
+            >
+            <EditText
+                android:id="@+id/physics"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Physics = 95"
+                android:inputType="number"
+                android:background="@null"
+                android:layout_marginLeft="20dp"
+                />
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphCardView
+            style="@style/Widget.Neumorph.CardView"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            app:neumorph_shapeType="basin"
+            >
+            <EditText
+                android:id="@+id/chemistry"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Chemistry = 90"
+                android:inputType="number"
+                android:background="@null"
+                android:layout_marginLeft="20dp"
+                />
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphCardView
+            style="@style/Widget.Neumorph.CardView"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            app:neumorph_shapeType="basin"
+            >
+            <EditText
+                android:id="@+id/biology"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Biology = 85"
+                android:inputType="number"
+                android:background="@null"
+                android:layout_marginLeft="20dp"
+                />
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphCardView
+            style="@style/Widget.Neumorph.CardView"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            app:neumorph_shapeType="basin"
+            >
+            <EditText
+                android:id="@+id/mathematics"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Mathematics = 80"
+                android:inputType="number"
+                android:background="@null"
+                android:layout_marginLeft="20dp"
+                />
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphCardView
+            style="@style/Widget.Neumorph.CardView"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            app:neumorph_shapeType="basin"
+            >
+            <EditText
+                android:id="@+id/computer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Computer = 97"
+                android:inputType="number"
+                android:background="@null"
+                android:layout_marginLeft="20dp"
+                />
+        </soup.neumorphism.NeumorphCardView>
+
+
+
+
+        <soup.neumorphism.NeumorphCardView
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            >
+            <LinearLayout
+                android:id="@+id/submitbtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Submit"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+        </soup.neumorphism.NeumorphCardView>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

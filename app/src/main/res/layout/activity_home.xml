@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#F7F8C8"
+    tools:context=".Home">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+            <soup.neumorphism.NeumorphButton
+                android:id="@+id/Header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HW Season 2 (one)"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="15dp"
+                android:layout_margin="10dp"
+                android:textColor="#A6A68D"
+                android:maxLines="1"
+                android:ellipsize="end"
+                />
+
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:numColumns="2"
+        android:gravity="center"
+        android:background="@drawable/mainback"
+        android:listSelector="@android:color/transparent"
+
+        />
+
+</LinearLayout>
